@@ -1,0 +1,37 @@
+{
+  "name": "themehybrid/hybrid-serializable-closure",
+  "description": "Hybrid Core Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "hybrid-core",
+    "Serializable",
+    "closure",
+    "wordpress"
+  ],
+  "authors": [
+    {
+      "name": "Theme Hybrid",
+      "email": "themehybrid@gmail.com",
+      "homepage": "https://themehybrid.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/themehybrid/hybrid-serializable-closure",
+  "support": {
+    "issues": "https://github.com/themehybrid/hybrid-serializable-closure/issues",
+    "forum": "https://themehybrid.com/board/forums/hybrid-core"
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Hybrid\\SerializableClosure\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
