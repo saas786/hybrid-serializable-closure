@@ -3,7 +3,6 @@
 namespace Hybrid\SerializableClosure\Contracts;
 
 interface Serializable {
-
     /**
      * Resolve the closure with the given arguments.
      *
@@ -17,5 +16,4 @@ interface Serializable {
      * @return \Closure
      */
     public function getClosure();
-
 }

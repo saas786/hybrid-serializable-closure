@@ -5,7 +5,6 @@ namespace Hybrid\SerializableClosure\Signers;
 use Hybrid\SerializableClosure\Contracts\Signer;
 
 class Hmac implements Signer {
-
     /**
      * The secret key.
      *
@@ -50,5 +49,4 @@ class Hmac implements Signer {
             hash_hmac( 'sha256', $signature['serializable'], $this->secret, true )
         ), $signature['hash'] );
     }
-
 }

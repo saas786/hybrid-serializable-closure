@@ -5,7 +5,6 @@ namespace Hybrid\SerializableClosure\Exceptions;
 use Exception;
 
 class InvalidSignatureException extends Exception {
-
     /**
      * Create a new exception instance.
      *
@@ -18,5 +17,4 @@ class InvalidSignatureException extends Exception {
     ) {
         parent::__construct( $message );
     }
-
 }

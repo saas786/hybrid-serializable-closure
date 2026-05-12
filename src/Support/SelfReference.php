@@ -3,7 +3,6 @@
 namespace Hybrid\SerializableClosure\Support;
 
 class SelfReference {
-
     /**
      * The unique hash representing the object.
      *
@@ -21,5 +20,4 @@ class SelfReference {
     public function __construct( $hash ) {
         $this->hash = $hash;
     }
-
 }

@@ -7,7 +7,6 @@ use Hybrid\SerializableClosure\Exceptions\InvalidSignatureException;
 use Hybrid\SerializableClosure\Exceptions\MissingSecretKeyException;
 
 class Signed implements Serializable {
-
     /**
      * The signer that will sign and verify the closure's signature.
      *
@@ -85,5 +84,4 @@ class Signed implements Serializable {
 
         $this->closure = $serializable->getClosure();
     }
-
 }

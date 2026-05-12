@@ -8,7 +8,6 @@ use Hybrid\SerializableClosure\Serializers\Signed;
 use Hybrid\SerializableClosure\Signers\Hmac;
 
 class SerializableClosure {
-
     /**
      * The closure's serializable.
      *
@@ -72,7 +71,7 @@ class SerializableClosure {
     }
 
     /**
-     * Sets the serializable closure secret key.
+     * Sets the transformer that should be used when serializing use variables.
      *
      * @param \Closure|null $transformer
      *
@@ -83,7 +82,7 @@ class SerializableClosure {
     }
 
     /**
-     * Sets the serializable closure secret key.
+     * Sets the resolver that should be used when unserializing use variables.
      *
      * @param \Closure|null $resolver
      *
@@ -120,5 +119,4 @@ class SerializableClosure {
 
         $this->serializable = $data['serializable'];
     }
-
 }

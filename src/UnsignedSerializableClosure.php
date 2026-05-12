@@ -5,7 +5,6 @@ namespace Hybrid\SerializableClosure;
 use Closure;
 
 class UnsignedSerializableClosure {
-
     /**
      * The closure's serializable.
      *
@@ -63,5 +62,4 @@ class UnsignedSerializableClosure {
     public function __unserialize( $data ) {
         $this->serializable = $data['serializable'];
     }
-
 }

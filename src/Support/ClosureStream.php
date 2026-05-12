@@ -4,11 +4,10 @@ namespace Hybrid\SerializableClosure\Support;
 
 #[\AllowDynamicProperties]
 class ClosureStream {
-
     /**
      * The stream protocol.
      */
-    const string STREAM_PROTO = 'hybrid-core-serializable-closure';
+    const string STREAM_PROTO = 'hybrid_core-serializable-closure';
 
     /**
      * Checks if this stream is registered.
@@ -49,7 +48,7 @@ class ClosureStream {
      * @return bool
      */
     public function stream_open( $path, $mode, $options, &$opened_path ) {
-        $this->content = "<?php\nreturn " . substr( $path, strlen( self::STREAM_PROTO . '://' ) ) . ';';
+        $this->content = "<?php\nreturn " . substr( $path, strlen( static::STREAM_PROTO . '://' ) ) . ';';
         $this->length  = strlen( $this->content );
 
         return true;
@@ -169,8 +168,7 @@ class ClosureStream {
      */
     public static function register() {
         if ( ! static::$isRegistered ) {
-            static::$isRegistered = stream_wrapper_register( self::STREAM_PROTO, __CLASS__ );
+            static::$isRegistered = stream_wrapper_register( static::STREAM_PROTO, __CLASS__ );
         }
     }
-
 }
