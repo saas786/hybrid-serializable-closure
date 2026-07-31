@@ -5,7 +5,6 @@ namespace Hybrid\SerializableClosure\Support;
 use SplObjectStorage;
 
 class ClosureScope extends SplObjectStorage {
-
     /**
      * The number of serializations in current scope.
      *
@@ -19,5 +18,4 @@ class ClosureScope extends SplObjectStorage {
      * @var int
      */
     public $toSerialize = 0;
-
 }

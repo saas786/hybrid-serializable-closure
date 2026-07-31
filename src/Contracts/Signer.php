@@ -3,7 +3,6 @@
 namespace Hybrid\SerializableClosure\Contracts;
 
 interface Signer {
-
     /**
      * Sign the given serializable.
      *
@@ -21,5 +20,4 @@ interface Signer {
      * @return bool
      */
     public function verify( $signature );
-
 }
